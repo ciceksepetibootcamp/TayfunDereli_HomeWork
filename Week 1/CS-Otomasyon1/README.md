@@ -1,4 +1,5 @@
 # CS-Otomasyon1
+> Test Cases Ödevi --> https://docs.google.com/spreadsheets/d/1vaHHpi16d4UiUhlhrdhhoRS_8CHApgXPgK1gcUMV_V8/edit#gid=0
 
 >**Önemli:** config.properties kısmından bilgilerini değiştirebilirsin.
 >
