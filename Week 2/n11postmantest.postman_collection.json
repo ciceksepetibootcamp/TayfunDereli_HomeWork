@@ -1,0 +1,898 @@
+{
+	"info": {
+		"_postman_id": "c1ca2c4d-a391-456c-8064-0a1f55d6e52e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pageview",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"PAGE_VIEW\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/sepetim/odeme-onayi\",\r\n        \"referrer\": \"https://www.n11.com/sepetim\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"category\": \"Basket Page\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login-User Operations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"USER_OPERATIONS\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {\r\n            \"couponId\": null\r\n        },\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/giris-yap\",\r\n        \"referrer\": \"https://www.n11.com/arama?q=bilgisayar\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"step\": \"update\",\r\n        \"username\": \"27178446\",\r\n        \"gender\": \"M\",\r\n        \"segments\": [\r\n            \"Campaign Allowed\"\r\n        ],\r\n        \"isRegistered\": true,\r\n        \"isLogin\": \"false\",\r\n        \"custom\": {}\r\n    },\r\n    {\r\n        \"name\": \"PAGE_VIEW\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/giris-yap\",\r\n        \"referrer\": \"https://www.n11.com/arama?q=bilgisayar\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"USER_OPERATIONS\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {\r\n            \"couponId\": null\r\n        },\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/arama?q=bilgisayar\",\r\n        \"referrer\": \"https://www.n11.com/giris-yap\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"step\": \"update\",\r\n        \"username\": \"27178446\",\r\n        \"email\": \"bebod65046@mainctu.com\",\r\n        \"gender\": \"M\",\r\n        \"segments\": [\r\n            \"Campaign Allowed\"\r\n        ],\r\n        \"isRegistered\": \"true\",\r\n        \"isLogin\": true,\r\n        \"custom\": {}\r\n    },\r\n    {\r\n        \"name\": \"PAGE_VIEW\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/arama?q=bilgisayar\",\r\n        \"referrer\": \"https://www.n11.com/giris-yap\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"category\": \"Product Search Result\",\r\n        \"subCategory\": \"elektronik\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"15366cf0-71e9-0ef8-227a-bb9cbea4f5e8\",\r\n    \"key\": \"4d0988f1-7afa-4714-825b-dc0861b01d0e\",\r\n    \"eventTable\": \"session_info\",\r\n    \"eventDetails\": {\r\n        \"referer\": \"https://www.google.com/\",\r\n        \"utm_source\": null,\r\n        \"utm_medium\": null,\r\n        \"utm_campaign\": null,\r\n        \"utm_content\": null,\r\n        \"utm_term\": null,\r\n        \"channel\": null,\r\n        \"send_id\": null,\r\n        \"session_id\": \"ab88faef-a22f-4aad-88de-4f6e1a040606\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://event.dengage.com/api/web/event",
+					"protocol": "https",
+					"host": [
+						"event",
+						"dengage",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"success\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.n11.com/api/country-notification/check",
+					"protocol": "https",
+					"host": [
+						"www",
+						"n11",
+						"com"
+					],
+					"path": [
+						"api",
+						"country-notification",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductView",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscription",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(\"SUCCESS\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"integrationKey\": \"l6gkDRun0AQsdy0vo_p_l_wlFzS2zcx7bG17GXJAZxgWAGrq_p_l_s5R5Ekd5LeVxLxtXJ34PZ1geO_p_l_4L9XI9CxyIyV_p_l_NbICvX_s_l_Gdz1EDJL7E32ebOKGBHbsRVBZupbCsmFcZds4\",\r\n    \"token\": null,\r\n    \"contactKey\": null,\r\n    \"permission\": true,\r\n    \"udid\": \"4d0988f1-7afa-4714-825b-dc0861b01d0e\",\r\n    \"advertisingId\": \"\",\r\n    \"carrierId\": null,\r\n    \"appVersion\": null,\r\n    \"sdkVersion\": \"1.0\",\r\n    \"trackingPermission\": true,\r\n    \"webSubscription\": null,\r\n    \"tokenType\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://push.dengage.com/api/web/subscription",
+					"protocol": "https",
+					"host": [
+						"push",
+						"dengage",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchfindkeywords",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.success).to.eql(true);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.user_agent).to.eql(\"PostmanRuntime/7.28.4\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"r_value\": 0.1104923539291081,\r\n    \"is_vpv\": false,\r\n    \"session_only\": false,\r\n    \"rec_value\": 0.01020408163265306,\r\n    \"user_id\": \"df6bc4e3-8bde-578f-aafb-cb3992481a10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://in.hotjar.com/api/v2/client/sites/196222/visit-data?sv=7",
+					"protocol": "https",
+					"host": [
+						"in",
+						"hotjar",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"client",
+						"sites",
+						"196222",
+						"visit-data"
+					],
+					"query": [
+						{
+							"key": "sv",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckOut",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"CHECKOUT\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/sepetim/odeme-onayi\",\r\n        \"referrer\": \"https://www.n11.com/sepetim\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"totalPrice\": \"199.96\",\r\n        \"basketId\": \"basket_27178446\",\r\n        \"step\": \"view-basket\",\r\n        \"productList\": [\r\n            {\r\n                \"quantity\": \"3\",\r\n                \"productId\": \"509655865\",\r\n                \"price\": \"49.99\"\r\n            },\r\n            {\r\n                \"quantity\": \"1\",\r\n                \"productId\": \"509655767\",\r\n                \"price\": \"49.99\"\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Permission Consent",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.success).to.eql(true);\r",
+							"});pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.scopes).to.eql([]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://in.hotjar.com/api/v1/sites/196222/consent?user_id=df6bc4e3-8bde-578f-aafb-cb3992481a10",
+					"protocol": "https",
+					"host": [
+						"in",
+						"hotjar",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sites",
+						"196222",
+						"consent"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "df6bc4e3-8bde-578f-aafb-cb3992481a10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notification Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"success\");\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data.storageTTL).to.eql(31536000);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data.storageValue).to.eql(\"5141\");\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data.storageKey).to.eql(\"agreement_notification_stat_KVKK_NOTIFICATION_GUEST_CHECKOUT\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"agreementId\": 5141,\r\n    \"agreementType\": \"KVKK_NOTIFICATION_GUEST_CHECKOUT\",\r\n    \"eventType\": \"DISPLAYED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.n11.com/api/agreements/notification-status",
+					"protocol": "https",
+					"host": [
+						"www",
+						"n11",
+						"com"
+					],
+					"path": [
+						"api",
+						"agreements",
+						"notification-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get messages animal",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.eql([]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://push.dengage.com/api/onsite/getMessages?acc=15366cf0-71e9-0ef8-227a-bb9cbea4f5e8&cdkey=27178446&type=c&did=426b031c-8060-4d0c-82d8-f7ab4a255c30",
+					"protocol": "https",
+					"host": [
+						"push",
+						"dengage",
+						"com"
+					],
+					"path": [
+						"api",
+						"onsite",
+						"getMessages"
+					],
+					"query": [
+						{
+							"key": "acc",
+							"value": "15366cf0-71e9-0ef8-227a-bb9cbea4f5e8"
+						},
+						{
+							"key": "cdkey",
+							"value": "27178446"
+						},
+						{
+							"key": "type",
+							"value": "c"
+						},
+						{
+							"key": "did",
+							"value": "426b031c-8060-4d0c-82d8-f7ab4a255c30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROMOTION",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"PROMOTION\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112423055500541952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/promosyon/hediye-rehberi-senin-icin-sectigimiz-evlilik-urunleri-1215383\",\r\n        \"referrer\": \"https://www.n11.com/kampanyalar/hediye-rehberi-ile-tum-hediye-alternatiflerine-ulas\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"type\": \"impression\",\r\n        \"code\": \"48379599093270989547\",\r\n        \"title\": \"Hediye Rehberi - Senin İçin Seçtiğimiz Evlilik Ürünleri\",\r\n        \"url\": \"https://www.n11.com/promosyon/hediye-rehberi-senin-icin-sectigimiz-evlilik-urunleri-1215383\",\r\n        \"mUrl\": \"https://www.n11.com/promosyon/hediye-rehberi-senin-icin-sectigimiz-evlilik-urunleri-1215383\",\r\n        \"image\": \"https://n11scdn.akamaized.net/a1/1188_250/19/12/31/86/12/96/35/88/02/11/86/94/48379599093270989547.jpg\",\r\n        \"startDate\": \"2019-11-07\",\r\n        \"endDate\": \"2022-01-15\",\r\n        \"categories\": [\r\n            \"kirtasiye-ve-ofis > defter-ve-ajanda > ajandalar\"\r\n        ],\r\n        \"brands\": [],\r\n        \"labels\": [],\r\n        \"productIds\": []\r\n    },\r\n    {\r\n        \"name\": \"PROMOTION\",\r\n        \"userId\": \"27178446\",\r\n        \"sessionId\": \"-9112423055500541952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/promosyon/hediye-rehberi-senin-icin-sectigimiz-evlilik-urunleri-1215383\",\r\n        \"referrer\": \"https://www.n11.com/kampanyalar/hediye-rehberi-ile-tum-hediye-alternatiflerine-ulas\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"type\": \"view\",\r\n        \"code\": \"48379599093270989547\",\r\n        \"title\": \"Hediye Rehberi - Senin İçin Seçtiğimiz Evlilik Ürünleri\",\r\n        \"url\": \"https://www.n11.com/promosyon/hediye-rehberi-senin-icin-sectigimiz-evlilik-urunleri-1215383\",\r\n        \"mUrl\": \"https://www.n11.com/promosyon/hediye-rehberi-senin-icin-sectigimiz-evlilik-urunleri-1215383\",\r\n        \"image\": \"https://n11scdn.akamaized.net/a1/1188_250/19/12/31/86/12/96/35/88/02/11/86/94/48379599093270989547.jpg\",\r\n        \"startDate\": \"2019-11-07\",\r\n        \"endDate\": \"2022-01-15\",\r\n        \"categories\": [\r\n            \"kirtasiye-ve-ofis > defter-ve-ajanda > ajandalar\"\r\n        ],\r\n        \"brands\": [],\r\n        \"labels\": [],\r\n        \"productIds\": []\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sepet ürün adeti artırma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"BASKET_OPERATIONS\",\r\n        \"userId\": \"-9112424317288701951\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/sepetim\",\r\n        \"referrer\": \"https://urun.n11.com/\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"productId\": \"509656034\",\r\n        \"basketId\": \"basket_-9112424317288701951\",\r\n        \"step\": \"add\",\r\n        \"quantity\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ürün silme",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.statusCode).to.eql(\"NO_DOMAIN_APIKEY_MATCH\");\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"BASKET_OPERATIONS\",\r\n        \"userId\": \"-9112424317288701951\",\r\n        \"sessionId\": \"-9112424317288701952\",\r\n        \"testMode\": \"false\",\r\n        \"device\": \"PC\",\r\n        \"noProcess\": false,\r\n        \"tryCount\": 0,\r\n        \"nextPage\": false,\r\n        \"params\": {},\r\n        \"recommendIds\": [],\r\n        \"pageUrl\": \"https://www.n11.com/sepetim\",\r\n        \"referrer\": \"https://www.n11.com/sepetim\",\r\n        \"browser\": \"Chrome\",\r\n        \"os\": \"Windows\",\r\n        \"osversion\": \"10\",\r\n        \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\",\r\n        \"lang\": \"EN\",\r\n        \"currency\": \"\",\r\n        \"region\": \"\",\r\n        \"async\": \"true\",\r\n        \"productId\": \"512288674\",\r\n        \"basketId\": \"basket_-9112424317288701951\",\r\n        \"step\": \"remove\",\r\n        \"quantity\": \"1\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcetr4.segmentify.com/add/events/v1.json?apiKey=4c90b154-53f1-4762-9177-f535de5c4e42",
+					"protocol": "https",
+					"host": [
+						"dcetr4",
+						"segmentify",
+						"com"
+					],
+					"path": [
+						"",
+						"add",
+						"events",
+						"v1.json"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "4c90b154-53f1-4762-9177-f535de5c4e42"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
