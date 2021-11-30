@@ -18,6 +18,8 @@ Test Setup
 
 >-Siteye giriş yapar.
 
+Test Cases ödevi = https://docs.google.com/spreadsheets/d/1vaHHpi16d4UiUhlhrdhhoRS_8CHApgXPgK1gcUMV_V8/edit#gid=0
+
 Test Senaryosu 1 
 
 >-Belirlenen sekmelere gidilir.
