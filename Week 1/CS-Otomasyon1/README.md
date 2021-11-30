@@ -52,4 +52,4 @@ Test Senaryo 2
 >-Favorilerimdeki ürünlerin isimlerinin doğruluğu kontrol ettirilir.
 
 >-Favorilerimdeki ürünler çıkartılır.
-
+ 
