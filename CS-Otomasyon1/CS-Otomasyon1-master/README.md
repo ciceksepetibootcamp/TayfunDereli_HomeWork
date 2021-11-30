@@ -1,5 +1,8 @@
 # CS-Otomasyon1
 
+
+>Test Cases ödevi = https://docs.google.com/spreadsheets/d/1vaHHpi16d4UiUhlhrdhhoRS_8CHApgXPgK1gcUMV_V8/edit#gid=0
+
 >**Önemli:** config.properties kısmından bilgilerini değiştirebilirsin.
 >
 ![howtoeditconfigfile1](https://user-images.githubusercontent.com/37184598/142984893-0475334b-a5f7-4a96-9f71-234f04e88a0f.gif)
@@ -18,7 +21,6 @@ Test Setup
 
 >-Siteye giriş yapar.
 
-Test Cases ödevi = https://docs.google.com/spreadsheets/d/1vaHHpi16d4UiUhlhrdhhoRS_8CHApgXPgK1gcUMV_V8/edit#gid=0
 
 Test Senaryosu 1 
 
