@@ -1,4 +1,4 @@
-# CS-Otomasyon1
+# LCW- BDD TEST Cucumber/Gherkin Syntax
 
 >**Önemli:** config.properties kısmından bilgilerini değiştirebilirsin.
 >
