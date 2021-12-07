@@ -2,53 +2,45 @@
 
 >**Önemli:** config.properties kısmından bilgilerini değiştirebilirsin.
 >
-![howtoeditconfigfile1](https://user-images.githubusercontent.com/37184598/142984893-0475334b-a5f7-4a96-9f71-234f04e88a0f.gif)
+![Lcw-bdd](https://user-images.githubusercontent.com/85188566/145046689-ae5028d8-7c82-4e53-b85b-ae37f9971c28.gif)
 
-Test Setup
+- **Çalışma videosu** --> 
 
->-Çiçek sepeti anasayfasına gider.
+https://user-images.githubusercontent.com/85188566/145046845-3cf267cf-487c-434b-8150-0ddad8221614.mp4
+
+
+- Backgorund Aksiyonları 
+
+>-Urlden https://www.lcwaikiki.com/tr-TR/TR sitesine gidilir.
 
 >-Tarayıcı ekranını tam ekran yapar.
 
->-Kampanya popupını kapatır.
-
->-Adres popupını kapatır.
-
 >-Çerez uyarısını kapatır.
 
->-Siteye giriş yapar.
+- Test Senaryosu 1 
 
-Test Senaryosu 1 
+>-Anasayfadan Giriş Yap butonuna tıklanır.
 
->-Belirlenen sekmelere gidilir.
+>-Üye girişi ekranında kullanıcı bilgileri girilir.
 
->-Kategori tercihi yapılır .
+>-Üye girişi kontrol edilir.
 
->-Bir ürün seçilir.
+- Test Senaryosu 2
 
->-Ürün sepete eklenir.
+>-Arama butonuna tıklatılır.
 
->-Sepetin içinin 1 oldugu kontrol edilir
+>-İstenen ürün aratılır.
 
-Test Login 
+>-İstenen ürün ile aranan ürünler eşleşiyor mu kontrol edilir.
 
->-Log in butonuna tıklanır.
+- Test Senaryosu 3
 
->-Üye bilgileri doldurulur ve giriş yapılır.
-
-Test Senaryo 2 
-
->-Login methodu cagırılır.
-
->-Belirlenen sekmelerden kategori tercihleri yapılır.
+>-Outlet kategorisine tıklanır.
 
 >-Ürün tercihi yapılır.
 
->-Ürün favorilere eklenir.
+>-Ürün sepete eklenir.
 
->-Favorilerim butonuna tıklanır.
+>-Ürünün sepette olduğu kontrol edilir.
 
->-Favorilerimdeki ürünlerin isimlerinin doğruluğu kontrol ettirilir.
-
->-Favorilerimdeki ürünler çıkartılır.
 
