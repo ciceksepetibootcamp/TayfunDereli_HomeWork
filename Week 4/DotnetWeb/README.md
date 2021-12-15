@@ -1,54 +1,27 @@
-# CS-Otomasyon1
+https://user-images.githubusercontent.com/85188566/146257987-81d45b40-b1c1-4e3b-bd48-db326148a2f9.mp4
 
->**Önemli:** config.properties kısmından bilgilerini değiştirebilirsin.
->
-![howtoeditconfigfile1](https://user-images.githubusercontent.com/37184598/142984893-0475334b-a5f7-4a96-9f71-234f04e88a0f.gif)
+🔵 **BasePage** 
 
-Test Setup
-
->-Çiçek sepeti anasayfasına gider.
+>-Ekşisözlük sitesine gider
 
 >-Tarayıcı ekranını tam ekran yapar.
 
->-Kampanya popupını kapatır.
 
->-Adres popupını kapatır.
+🔵 **Test Senaryosu**
 
->-Çerez uyarısını kapatır.
+🔷 [HomePage]
 
->-Siteye giriş yapar.
+>-Anasayfada olunduğu kontrol edilir.
 
-Test Senaryosu 1 
+>-Sitedeki arama kutusuna tıklanır ve içine bir text gönderilir.
 
->-Belirlenen sekmelere gidilir.
+>-Gönderilen text ile arama sonucu eşleşiyor mu kontrol edilir.
 
->-Kategori tercihi yapılır .
+🔷[CategoryPage]
 
->-Bir ürün seçilir.
+>-Seçilen kategoriye tıklanır.
 
->-Ürün sepete eklenir.
+>-Seçilen kategori ile ilgili başlık kontrol edilir.
 
->-Sepetin içinin 1 oldugu kontrol edilir
 
-Test Login 
-
->-Log in butonuna tıklanır.
-
->-Üye bilgileri doldurulur ve giriş yapılır.
-
-Test Senaryo 2 
-
->-Login methodu cagırılır.
-
->-Belirlenen sekmelerden kategori tercihleri yapılır.
-
->-Ürün tercihi yapılır.
-
->-Ürün favorilere eklenir.
-
->-Favorilerim butonuna tıklanır.
-
->-Favorilerimdeki ürünlerin isimlerinin doğruluğu kontrol ettirilir.
-
->-Favorilerimdeki ürünler çıkartılır.
 
