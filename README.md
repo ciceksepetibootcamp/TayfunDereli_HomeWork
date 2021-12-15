@@ -17,3 +17,9 @@
       - Rest Assure ile 5 Api Testi
   - 2. Homework
       - LCW sitesi BDD Test --> 3 Test Senaryosu(Cucumber/Gherkin Syntax)
+
+- [x] 4. Hafta 🌏
+  - 1. Homework
+      - Dotnet Otomasyon
+  - 2. Homework
+      - Pyhton Otomasyon
