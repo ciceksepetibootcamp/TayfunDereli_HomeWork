@@ -35,7 +35,6 @@ namespace DotnetWeb
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(8));
 
             Assert.That(home.PageLoad(), Is.EqualTo("https://eksisozluk.com/"));
-            //String assertText = home.GetPopulerSorular();
             home.SearchBox("dolar");
             Assert.True(home.PageLoad().Contains("dolar"));
             home.Category();
