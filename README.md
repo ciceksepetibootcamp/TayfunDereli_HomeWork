@@ -23,3 +23,9 @@
       - Dotnet Otomasyon
   - 2. Homework
       - Pyhton Otomasyon
+
+- [x] 5. Hafta 🌕
+  - 1. Homework
+      - POM Appium Otomasyon
+  - 2. Homework
+      - BDD Gherkin Syntax Appium Otomasyon
